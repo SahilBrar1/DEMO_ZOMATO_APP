@@ -1,13 +1,14 @@
-import { View, Text, TextInput, StyleSheet } from 'react-native'
+import { View, Text, TextInput, StyleSheet,Image } from 'react-native'
 import React from 'react'
-import { Image } from 'expo-image';
+
 import Mybutton from '@/components/Mybutton';
 
 
 const Login = () => {
   return (
     <View>
-      <Image source={{ uri: '../assets/images/zomato.jpg' }} />
+       <Image style={style.img} source={require('../assets/images/zomato.jpg') } />
+      
       <Text style={style.text}>India's #1 Food Delivery and Dining App</Text>
       <Text style={style.log}>Log in or Sign up</Text>
       <View style={style.in}>
@@ -26,7 +27,7 @@ const Login = () => {
 export default Login
 const style = StyleSheet.create({
   text: {
-    marginTop: '80%',
+    marginLeft:20,
     padding: 20,
     fontSize: 30,
     fontWeight: 'bold',
@@ -51,7 +52,8 @@ const style = StyleSheet.create({
     textAlign: 'center'
   },
   end: {
-    padding: '30%'
+    padding: '25%',
+    marginLeft:20
   },
   num: {
     borderWidth: 3,
@@ -64,6 +66,11 @@ const style = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between'
-
+  },
+  img:{
+    height:350,
+    width:'100%',
+    borderBottomLeftRadius:20,
+    borderBottomRightRadius:20
   }
 })
