@@ -2,7 +2,7 @@ import React from "react";
 import { StyleSheet, TouchableOpacity, Text,View,Image } from "react-native";
 import Ionicons from '@expo/vector-icons/Ionicons';
 import Ratebutton from "./Ratebutton";
-
+import SearchBar from "./SearchBar";
 
 interface AppButtonProps {
   onPress?: () => void;
@@ -16,23 +16,28 @@ const AppButton: React.FC<AppButtonProps> = ({ name }) => (
     style={[
       styles.appButtonContainer,
     ]}
-  >
+  ><View>
+    </View>
+    
     <View>
+
     <Image style={styles.img} source={require('../assets/images/pizzaimg.jpg') } resizeMode="cover"/>
     </View>
     <View style={styles.time} >
     <Ionicons name="time"  />
-    <Text>23 min</Text>
+    <Text>23 min  </Text>
    
-    <Text> 2.2km</Text>
+    <Text>  2.2km</Text>
     </View>
     <View style={styles.textflex} >
     <Text style={styles.appButtonText}>{name}</Text>
    <Ratebutton/>
    </View>
+   
     <Text>flat Rs. 150 off above Rs. 299</Text>
 
   </TouchableOpacity>
+
 );
 
 export default AppButton;
@@ -47,7 +52,7 @@ const styles = StyleSheet.create({
   
   },
   appButtonText: {
-  fontSize:18,
+  fontSize:20,
     color: "black",
     fontWeight: "bold",    
   },
