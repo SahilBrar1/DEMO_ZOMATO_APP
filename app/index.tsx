@@ -1,5 +1,6 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import FlatlistComponent from "@/components/FlatlistComponent";
@@ -47,3 +48,9 @@ import App from "../App";
 
 registerRootComponent(App);
 >>>>>>> 601e7e0 (navigation)
+=======
+import { registerRootComponent } from "expo";
+import App from "../App";
+
+registerRootComponent(App);
+>>>>>>> origin/logic-dev
