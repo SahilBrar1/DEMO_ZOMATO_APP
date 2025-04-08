@@ -20,7 +20,6 @@ const FlatlistComponent = () => {
   }
   return (
     <View style={styles.container}>
-      
       <FlatList
         data={data}
         keyExtractor={(item) => item.id}
