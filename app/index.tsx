@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from "react";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import FlatlistComponent from "@/components/FlatlistComponent";
@@ -33,3 +34,9 @@ export default index;
 //    };
   
 //    export default index;
+=======
+import { registerRootComponent } from "expo";
+import App from "../App";
+
+registerRootComponent(App);
+>>>>>>> 601e7e0 (navigation)
